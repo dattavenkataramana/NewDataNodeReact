@@ -1,0 +1,27 @@
+GET http://localhost:3001/newdata/
+###
+
+POST http://localhost:3001/api/register
+Content-Type: application/json
+
+{
+    "username":"ramana",
+    "mobilenumber":"9581982638",
+    "email":"ramana@gmail.com",
+    "password":"ramana1234@#*"
+}
+
+###
+
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+    "email":"ramana@gmail.com",
+    "password":"ramana1234@#*"
+}
+
+###
+
+GET http://localhost:3001/apidata/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbWFuYUBnbWFpbC5jb20iLCJpYXQiOjE3MTE3ODE5NzV9.4MlWW0u5w01KAJ3BhMOfTAioLC7OyaxIXbqiDMnAjFE
